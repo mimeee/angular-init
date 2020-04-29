@@ -1,0 +1,30 @@
+.container-wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.side-bar-wrapper {
+    min-width: 250px;
+    height: 100%;
+    background: rgb(34, 39, 44);
+}
+
+.content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-breadcrumbs {
+    min-height: 98px;
+    height: 98px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.content {
+    background: rgb(240, 242, 245);
+    flex-grow: 1;
+    overflow: auto;
+}

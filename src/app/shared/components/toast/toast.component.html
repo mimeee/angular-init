@@ -1,0 +1,7 @@
+
+<div class="toast-wrapper">
+  <div *ngFor="let item of msgArr" class="toast-body">
+    <span *ngIf="item.class" [class]="'icon icon-' + item.class" ></span>
+    <span>{{item.msg}}</span>
+  </div>
+</div>

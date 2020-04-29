@@ -1,0 +1,7 @@
+<ul class="breadcrumb">
+  <li *ngFor="let n of path" ><a href="#" [routerLink]="'/' + n.path">{{n.title}}</a></li>
+</ul>
+
+<h1>
+  {{activeTitle}}
+</h1>

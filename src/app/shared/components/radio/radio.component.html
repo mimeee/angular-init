@@ -1,0 +1,8 @@
+<div class="line"  class="radio-wrapper" >
+  <div>{{label}}</div>
+  <div class="btn-wrapper" role="group" style="flex-grow: 1;">
+    <button *ngFor="let item of data; let i = index" type="button"
+      [class]="'btn btn-sm btn-outline-success mm-btn' + (i === active ? ' active' : '')"
+      (click)="selected(i)">{{item[showKey]}}</button>
+  </div>
+</div>

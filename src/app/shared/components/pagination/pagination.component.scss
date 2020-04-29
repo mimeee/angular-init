@@ -1,0 +1,14 @@
+:host ::ng-deep .page-link:focus {
+    color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(158, 241, 120, 0.25);
+}
+
+:host ::ng-deep .page-item.active .page-link {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+:host ::ng-deep .page-link {
+    color: #28a745;
+}

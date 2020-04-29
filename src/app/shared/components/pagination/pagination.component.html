@@ -1,0 +1,9 @@
+
+<div class="d-flex justify-content-between p-2">
+  <select class="custom-select" style="width: auto" [(ngModel)]="ps" (change)="pageChange()">
+    <option *ngFor="let i of pso" [ngValue]="i">每页显示{{i}}条</option>
+  </select>
+
+  <ngb-pagination [directionLinks]="true" [boundaryLinks]="true" [rotate]="true" maxSize="5" [collectionSize]="t" [(page)]="pi" [pageSize]="ps" (pageChange)="pageChange()">
+  </ngb-pagination>
+</div>

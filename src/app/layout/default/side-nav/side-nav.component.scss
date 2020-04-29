@@ -1,0 +1,58 @@
+// 修改bootstrap样式
+:host ::ng-deep .card{
+    background: rgb(34, 39, 44) ;
+    border-radius: unset;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight: lighter;
+}
+
+
+:host ::ng-deep .card .btn {
+    color: #ccc;
+    font-weight: lighter;
+    font-size:16px;
+    font-family:PingFangSC-Regular,PingFang SC;
+}
+
+:host ::ng-deep .card.active .btn{
+    color:rgba(255,255,255,1);
+    font-weight: bold;
+}
+
+:host ::ng-deep .card .btn:hover {
+    text-decoration: none;
+}
+
+:host ::ng-deep .card-body {
+    padding: 0;
+}
+
+
+//自定义样式
+.sub-title{
+    font-size: 14px;
+    text-indent: 50px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.sub-title a{
+    color:rgba(255,255,255,1);
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.sub-title.active {
+    background: #333;
+    font-weight: bold;
+}
+
+.sub-title a.active{
+    font-weight: bold;
+}
+
+span.active {
+    font-weight: bold;
+    color: #fff;
+}
