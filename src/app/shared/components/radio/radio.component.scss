@@ -1,0 +1,57 @@
+@import 'src/app/style/common.style.scss';
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mm-btn {
+  width: 30%;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+:host ::ng-deep .btn-outline-success:focus, .btn-outline-success.focus {
+  box-shadow: none;
+}
+
+:host ::ng-deep .btn-outline-success:not(:disabled):not(.disabled).active:focus:focus {
+  box-shadow: none;
+}
+
+:host ::ng-deep .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active{
+  border: 1px solid rgba(3,193,96,1);
+  color: rgba(3,193,96,1);
+  background-color: #fff;
+}
+
+:host ::ng-deep .dropdown-toggle::after {
+  float: right;
+  margin-top: 8px;
+}
+
+:host ::ng-deep .dropdown-menu{
+  width: 100%;
+  text-align: center;
+  max-height: 251px;
+  overflow: auto;
+}
+
+.show {
+  display: block;
+}
+
+.radio-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.btn-wrapper{
+  display: flex;
+  justify-content: space-around;
+}

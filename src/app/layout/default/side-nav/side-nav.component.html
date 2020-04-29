@@ -1,0 +1,11 @@
+<ngb-accordion #acc="ngbAccordion" activeIds="novel">
+
+  <ngb-panel [title]="route.test.title" id="comic">
+    <ng-template ngbPanelContent>
+      <div class="sub-title" routerLinkActive="active">
+        <a href="#" [routerLink]="'/' + route.test.path" routerLinkActive="active">{{route.test.title}}</a>
+      </div> 
+    </ng-template>
+  </ngb-panel>
+
+</ngb-accordion>

@@ -1,0 +1,11 @@
+<div class="line">
+<div>{{label}}</div>
+<div class="btn-group form-right">
+  <button type="button" (click)="showSelect = !showSelect" [class]="'btn btn-sm btn-outline-success dropdown-toggle mm-btn' + (activeTitle !== defaultActiveTitle ? ' select-active' : '')" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{activeTitle}}
+  </button>
+  <div class="dropdown-menu" [class]="'dropdown-menu'+ (showSelect ? ' show' : '')" >
+    <span *ngFor="let item of data; let i = index" class="dropdown-item" (click)="selected(i)">{{item[showKey]}}</span>
+  </div>
+</div>
+</div>

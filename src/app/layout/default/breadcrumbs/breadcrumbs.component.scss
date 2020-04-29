@@ -1,0 +1,23 @@
+
+:host ::ng-deep .breadcrumb a {
+    color: #28a745;
+}
+
+.breadcrumb > li + li:before {
+    color: #CCCCCC;
+    content: "/ ";
+    padding: 0 5px;
+}
+
+:host ::ng-deep .breadcrumb {
+    background: #fff;
+    padding: 16px 0 0 32px;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: PingFangSC-Medium,PingFang SC;
+    font-weight: 500;
+    color: rgba(0,0,0,0.85);
+    text-indent: 32px;
+}

@@ -1,0 +1,42 @@
+@import 'src/app/style/common.style.scss';
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mm-btn {
+  width: 100%;
+  font-size: 14px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.form-right {
+  min-width: 50%;
+  margin: 29px 5px;
+}
+
+:host ::ng-deep .dropdown-toggle::after {
+  float: right;
+  margin-top: 8px;
+}
+
+:host ::ng-deep .dropdown-menu{
+  width: 100%;
+  text-align: center;
+  max-height: 251px;
+  overflow: auto;
+}
+
+.show {
+  display: block;
+}
+
+.select-active {
+  color: #20252E;
+}
